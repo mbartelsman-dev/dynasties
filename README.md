@@ -54,7 +54,10 @@ A sample person:
 ```TOML
 [[Person]]
 id = 0024
-name = "Jay Random"
+name = [
+    { given = "Jay" },
+    { family = "Random" },
+]
 events = [
     { birth = 1900 },
     { marriage = 1930 },
@@ -95,3 +98,17 @@ The simulation of a person's life requires access to:
 ### root
 
 A root is the initial `Person` in a given family, it is also the person to which all other people in the family are related, wether directly or indirectly.
+
+---
+
+* Family
+  * Initialize new family
+  * Load family from file
+  * Save family to file
+  * Simulate family
+* Person
+  * Create new person (pre-generated)
+  * Create new child
+  * Simulate person
+  * Generate attributes
+    * Name
