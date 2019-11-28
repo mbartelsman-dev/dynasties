@@ -53,11 +53,7 @@ A `Person` is a data object which represents a person and their entire life in t
 A sample person:
 ```TOML
 [[Person]]
-<<<<<<< HEAD
 id = 24
-=======
-id = 0024
->>>>>>> 327016295536c0663d3e162cc0f7bfade1059463
 name = [
     { given = "Jay" },
     { family = "Random" },
